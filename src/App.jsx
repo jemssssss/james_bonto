@@ -36,7 +36,7 @@ const projects = [
     stack: ['PIC32', 'I2C', 'UART', 'C++', 'Telemetry'],
     link: '#projects',
     image:
-      'linear-gradient(135deg, rgba(19,19,19,0.2), rgba(19,19,19,0.85)), radial-gradient(circle at 30% 30%, rgba(102,253,236,0.55), transparent 30%), linear-gradient(135deg, #15322f, #101010)',
+      "/images/cansat.png",
   },
   {
     title: 'UP CAPES Jobfair 2026 Handbook Dashboard',
@@ -48,7 +48,7 @@ const projects = [
     stack: ['React', 'Tailwind', 'Vite', 'UX Systems'],
     link: '#projects',
     image:
-      'linear-gradient(135deg, rgba(19,19,19,0.12), rgba(19,19,19,0.82)), linear-gradient(90deg, rgba(102,253,236,0.14) 1px, transparent 1px), linear-gradient(rgba(102,253,236,0.14) 1px, transparent 1px), linear-gradient(135deg, #1a2324, #0f0f10)',
+      "/images/jf2026.png",
   },
   {
     title: 'Precision Amplifier',
@@ -60,7 +60,7 @@ const projects = [
     stack: ['Analog', 'PCB', 'Simulating', 'Prototyping'],
     link: '#projects',
     image:
-      'linear-gradient(135deg, rgba(19,19,19,0.2), rgba(19,19,19,0.85)), radial-gradient(circle at 70% 20%, rgba(64,224,208,0.38), transparent 24%), linear-gradient(145deg, #2c2c2c, #111111)',
+      "/images/amplifer.png",
   },
 ]
 
@@ -89,9 +89,9 @@ const education = [
     body: 'Focused on analog and digital systems, instrumentation, and signal processing.',
   },
   {
-    title: 'Full Stack Certification',
-    meta: 'Tech Institute | 2019',
-    body: 'Covered modern frontend architecture, component systems, and deployment fundamentals.',
+    title: 'High School Graduate',
+    meta: 'PSHS-NMC (formerly PSHS-CMC) | 2016 - 2022',
+    body: 'Emphasized on STEM, designed for careers through a rigorous, research-oriented program.',
   },
 ]
 
@@ -129,7 +129,7 @@ function App() {
               <h1 className="text-5xl font-black uppercase leading-[0.88] tracking-[-0.05em] text-onSurface sm:text-7xl lg:text-[7rem]">
                 Laureus James
                 <br />
-                <span className="text-primaryContainer">U. Bonto</span>
+                <span className="text-primaryContainer">Bonto</span>
               </h1>
               <p className="section-copy mt-6 text-base leading-8 text-onSurfaceVariant sm:text-xl">
                 Electronics Engineering student focused on embedded systems, technical interfaces, and digital products that feel as precise as the hardware behind them.
@@ -325,7 +325,7 @@ function App() {
             </div>
             <div className="mx-auto mt-12 grid max-w-4xl gap-4 md:grid-cols-2">
               <a
-                href="mailto:laureus@example.com"
+                href="mailto:jamesbonto126@gmail.com"
                 className="reveal ghost-border flex items-center justify-center gap-3 bg-surfaceHigh px-6 py-6 font-mono text-[11px] font-bold uppercase tracking-[0.24em] transition duration-300 ease-expo hover:border-primary hover:bg-surfaceHighest"
                 data-reveal
               >
