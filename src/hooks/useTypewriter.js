@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 
-export function useTypewriter(lines, speed = 26) {
+export function useTypewriter(lines = [], speed = 26) {
   const [visibleLines, setVisibleLines] = useState([''])
   const [isComplete, setIsComplete] = useState(false)
 
@@ -10,25 +10,22 @@ export function useTypewriter(lines, speed = 26) {
     let timer
 
     const tick = () => {
-      if (lineIndex >= lines.length) {
+      if (!lines || lineIndex >= lines.length) {
         setIsComplete(true)
         return
       }
 
+      const currentLine = lines[lineIndex] || ''
+
       setVisibleLines((current) => {
-        if (!lines || lineIndex >= lines.length) return current
-
         const next = [...current]
-        const line = lines[lineIndex] || ''
-
-        next[lineIndex] = line.slice(0, charIndex + 1)
-
+        next[lineIndex] = currentLine.slice(0, charIndex + 1)
         return next
       })
 
       charIndex += 1
 
-      if (charIndex > lines[lineIndex].length) {
+      if (charIndex > currentLine.length) {
         lineIndex += 1
         charIndex = 0
         setVisibleLines((current) => [...current, ''])
