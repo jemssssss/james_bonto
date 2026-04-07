@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="dark scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L. BONTO | Electronics Engineer &amp; Developer</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800;900&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .tonal-layering {
+            background: linear-gradient(180deg, rgba(28, 27, 27, 0) 0%, rgba(28, 27, 27, 1) 100%);
+        }
+        .obsidian-glow {
+            box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.8);
+        }
+        .glass-panel {
+            backdrop-filter: blur(20px);
+            background-color: rgba(58, 57, 57, 0.6);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "on-background": "#e5e2e1",
+                "on-primary-fixed": "#00201d",
+                "on-tertiary-fixed": "#291800",
+                "on-primary": "#003732",
+                "primary-container": "#40e0d0",
+                "surface-dim": "#131313",
+                "on-secondary-container": "#8bbfb7",
+                "on-secondary": "#003732",
+                "on-tertiary": "#442b00",
+                "tertiary-fixed-dim": "#fbbb56",
+                "surface-container-highest": "#353534",
+                "outline-variant": "#3c4a47",
+                "tertiary-fixed": "#ffddb1",
+                "on-secondary-fixed-variant": "#194f49",
+                "surface-container": "#201f1f",
+                "on-tertiary-fixed-variant": "#624000",
+                "on-tertiary-container": "#744d00",
+                "surface-container-lowest": "#0e0e0e",
+                "primary-fixed": "#61f9e9",
+                "secondary-container": "#194f49",
+                "error": "#ffb4ab",
+                "primary": "#66fdec",
+                "on-primary-fixed-variant": "#005049",
+                "surface-bright": "#3a3939",
+                "surface-container-low": "#1c1b1b",
+                "primary-fixed-dim": "#3adccc",
+                "on-surface": "#e5e2e1",
+                "secondary": "#9cd1c8",
+                "surface-container-high": "#2a2a2a",
+                "tertiary": "#ffe1bb",
+                "inverse-on-surface": "#313030",
+                "background": "#131313",
+                "inverse-surface": "#e5e2e1",
+                "surface-variant": "#353534",
+                "on-error": "#690005",
+                "on-secondary-fixed": "#00201d",
+                "tertiary-container": "#ffbe59",
+                "on-primary-container": "#006058",
+                "on-surface-variant": "#bacac6",
+                "secondary-fixed-dim": "#9cd1c8",
+                "inverse-primary": "#006a62",
+                "outline": "#859491",
+                "surface": "#131313",
+                "surface-tint": "#3adccc",
+                "error-container": "#93000a",
+                "on-error-container": "#ffdad6",
+                "secondary-fixed": "#b8ede4"
+              },
+              fontFamily: {
+                "headline": ["Inter"],
+                "body": ["Inter"],
+                "label": ["Space Grotesk"]
+              },
+              borderRadius: {"DEFAULT": "0px", "lg": "0px", "xl": "0px", "full": "9999px"},
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface font-body selection:bg-primary selection:text-on-primary">
+<!-- TopNavBar Navigation Shell -->
+<nav class="fixed top-0 w-full z-50 rounded-none border-b border-[#40E0D0]/10 bg-[#131313]/80 backdrop-blur-xl h-20">
+<div class="flex justify-between items-center max-w-[1440px] mx-auto px-12 h-full">
+<div class="text-lg font-black tracking-tighter text-white uppercase">L. BONTO</div>
+<div class="hidden md:flex items-center gap-8">
+<!-- Nav Links Map -->
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-bold text-[#40E0D0] border-b-2 border-[#40E0D0] pb-1" href="#home">Home</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-bold text-neutral-500 hover:text-white transition-colors duration-300" href="#about">About</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-bold text-neutral-500 hover:text-white transition-colors duration-300" href="#skills">Skills</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-bold text-neutral-500 hover:text-white transition-colors duration-300" href="#projects">Projects</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-bold text-neutral-500 hover:text-white transition-colors duration-300" href="#experience">Experience</a>
+<a class="font-['Inter'] uppercase tracking-widest text-[11px] font-bold text-neutral-500 hover:text-white transition-colors duration-300" href="#contact">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary-container font-label text-[11px] font-bold uppercase tracking-widest px-6 py-3 hover:bg-primary transition-all duration-200 active:scale-95">
+                Resume
+            </button>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex flex-col justify-center px-12 pt-20 overflow-hidden bg-surface" id="home">
+<!-- Technical Grid Overlay -->
+<div class="absolute inset-0 opacity-[0.03] pointer-events-none" style="background-image: linear-gradient(#40E0D0 1px, transparent 1px), linear-gradient(90deg, #40E0D0 1px, transparent 1px); background-size: 40px 40px;"></div>
+<div class="relative max-w-[1440px] mx-auto w-full z-10">
+<div class="inline-flex items-center gap-2 mb-6">
+<span class="w-12 h-[1px] bg-primary"></span>
+<span class="font-label text-primary uppercase tracking-[0.3em] text-xs">Available for New Challenges</span>
+</div>
+<h1 class="text-7xl md:text-9xl font-black tracking-tighter leading-none mb-6">
+                LAUREUS JAMES <br/>
+<span class="text-primary-container">U. BONTO</span>
+</h1>
+<p class="font-label text-xl md:text-2xl text-on-surface-variant max-w-2xl mb-12 tracking-tight leading-relaxed">
+                Electronics Engineer <span class="text-primary mx-2">|</span> Embedded Systems <span class="text-primary mx-2">|</span> Web Development
+            </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary-container text-on-primary-container px-10 py-5 font-label font-bold uppercase tracking-widest text-sm hover:translate-x-1 hover:-translate-y-1 transition-transform" href="#projects">
+                    View Projects
+                </a>
+<a class="border border-outline-variant text-on-surface px-10 py-5 font-label font-bold uppercase tracking-widest text-sm hover:bg-surface-container-high transition-colors" href="#">
+                    Download Resume
+                </a>
+</div>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-12 left-12 flex items-center gap-4">
+<span class="font-label text-[10px] uppercase tracking-widest text-on-surface-variant">Scroll to explore</span>
+<div class="w-px h-12 bg-outline-variant/30 relative overflow-hidden">
+<div class="absolute top-0 left-0 w-full h-1/2 bg-primary animate-bounce"></div>
+</div>
+</div>
+</section>
+<!-- About Section (Terminal UI) -->
+<section class="py-32 bg-surface-container-low px-12" id="about">
+<div class="max-w-4xl mx-auto">
+<div class="bg-surface-container-highest border border-outline-variant/20 overflow-hidden obsidian-glow">
+<!-- Terminal Header -->
+<div class="bg-surface-container-high px-4 py-3 flex items-center justify-between border-b border-outline-variant/20">
+<div class="flex gap-2">
+<div class="w-3 h-3 bg-red-500/50"></div>
+<div class="w-3 h-3 bg-yellow-500/50"></div>
+<div class="w-3 h-3 bg-green-500/50"></div>
+</div>
+<div class="font-label text-[10px] text-on-surface-variant uppercase tracking-widest">bio.sys — bash — 80x24</div>
+</div>
+<!-- Terminal Body -->
+<div class="p-8 font-mono text-primary/90 leading-relaxed text-lg">
+<div class="flex gap-4 mb-4">
+<span class="text-on-surface-variant opacity-50">01</span>
+<p><span class="text-secondary">class</span> <span class="text-white">Engineer</span> {</p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="text-on-surface-variant opacity-50">02</span>
+<p class="pl-8"><span class="text-secondary">constructor</span>() {</p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="text-on-surface-variant opacity-50">03</span>
+<p class="pl-16 text-on-surface-variant">// Dedicated Electronics Engineer with a passion</p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="text-on-surface-variant opacity-50">04</span>
+<p class="pl-16 text-on-surface-variant">// for embedded systems and web development.</p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="text-on-surface-variant opacity-50">05</span>
+<p class="pl-16">this.<span class="text-secondary">traits</span> = ["fun", "diligent", "critical", "open-minded"];</p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="text-on-surface-variant opacity-50">06</span>
+<p class="pl-16">this.<span class="text-secondary">hobbies</span> = ["video editing", "gaming"];</p>
+</div>
+<div class="flex gap-4 mb-2">
+<span class="text-on-surface-variant opacity-50">07</span>
+<p class="pl-8">}</p>
+</div>
+<div class="flex gap-4">
+<span class="text-on-surface-variant opacity-50">08</span>
+<p>}</p>
+</div>
+<div class="mt-8 flex items-center gap-2">
+<span class="text-primary">$</span>
+<span class="w-2 h-5 bg-primary animate-pulse"></span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section (Bento Grid) -->
+<section class="py-32 bg-surface px-12" id="skills">
+<div class="max-w-[1440px] mx-auto">
+<h2 class="text-5xl font-black mb-16 uppercase tracking-tighter">Technical <span class="text-primary">Stack</span></h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Embedded Systems -->
+<div class="bg-surface-container-low p-8 border border-outline-variant/10 hover:border-primary/40 transition-colors group">
+<div class="mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">memory</span>
+</div>
+<h3 class="font-label text-xl font-bold uppercase mb-4 tracking-wider">Embedded Systems</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Arduino</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">ESP32</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">STM32</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Firmware C++</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">PCB Design</span>
+</div>
+</div>
+<!-- Web Development -->
+<div class="bg-surface-container-low p-8 border border-outline-variant/10 hover:border-primary/40 transition-colors group">
+<div class="mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">code</span>
+</div>
+<h3 class="font-label text-xl font-bold uppercase mb-4 tracking-wider">Web Development</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">React</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Tailwind CSS</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">TypeScript</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Node.js</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Next.js</span>
+</div>
+</div>
+<!-- Tools & Software -->
+<div class="bg-surface-container-low p-8 border border-outline-variant/10 hover:border-primary/40 transition-colors group">
+<div class="mb-6 text-primary">
+<span class="material-symbols-outlined text-4xl">construction</span>
+</div>
+<h3 class="font-label text-xl font-bold uppercase mb-4 tracking-wider">Tools &amp; Software</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Altium</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">KiCad</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Premiere Pro</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">Git</span>
+<span class="px-3 py-1 bg-surface-container-high text-on-surface-variant font-label text-[10px] uppercase tracking-wider">VS Code</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Projects Section -->
+<section class="py-32 bg-surface-container-low px-12" id="projects">
+<div class="max-w-[1440px] mx-auto">
+<div class="flex justify-between items-end mb-16">
+<h2 class="text-5xl font-black uppercase tracking-tighter">Selected <br/> <span class="text-primary-container">Work</span></h2>
+<div class="font-label text-[10px] text-on-surface-variant uppercase tracking-[0.4em] mb-4">Case Studies [03]</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project 1 -->
+<div class="group relative bg-surface overflow-hidden obsidian-glow">
+<div class="aspect-[4/5] relative">
+<img alt="Embedded Systems Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Close up of a green microchip with glowing cyan lights and high-tech electrical circuits in a dark lab setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDH5JcN0d9wOPZcyNnuIBnLukbIQydELa2tatUlMcpWWxRSX-0VkIyFmzsUQXrQfYo6qJEkMivFQ8IsJfJpnWcMEvzwrBUsJGsJtRLAuf2brYjMs0XAx0UQAJYWzsM9lvRmCKy5yrPiRPGrfV8UBp1BkipoVezUIzsAFhDfSNzzPRLiWG8-oEoDTEHnFj_df7UzBLgdXmGrwZ8IlKT6KoBG6x0p8CK9E46ewFGNifs4xrAOLGZxRHj923tilQz4h9lpTY_hQIV68ps-"/>
+<div class="absolute inset-0 bg-surface/40 group-hover:bg-primary/20 transition-colors"></div>
+</div>
+<div class="p-8">
+<div class="text-[10px] font-label text-primary uppercase tracking-[0.2em] mb-2">Embedded Systems</div>
+<h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Smart Sensor Hub</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Low-latency IoT bridge designed for real-time industrial monitoring using ESP32 and MQTT protocols.</p>
+<a class="inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
+                            Explore Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative bg-surface overflow-hidden obsidian-glow mt-12">
+<div class="aspect-[4/5] relative">
+<img alt="Web Development Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Sleek laptop displaying complex code lines in a dark room with neon cyan highlights reflecting off the keyboard" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBpJIwTAbm98IqzJa0-lyYbzd6FwX3M7NHU_GWo0U0nw076ikPLIilMCxJMkIysNEBb7Oa93T7JJtUUEhz1CG8oxEpMSwWsZumRELtKo8XXM1YrZ2vkfCbHCkMN6asd0sZu6yqJ0b42rxuZlmT9kOdwjWazDXHQ3USOu3Lhse9PHp9BbzJdns04Rj40ad1rmsYEolceRo6nDECoy9JzqMZHib0hjLZEZw4WFDjI2l02dU4ywuamRoRK6R8DfFZysHtoVa857qIvCO-j"/>
+<div class="absolute inset-0 bg-surface/40 group-hover:bg-primary/20 transition-colors"></div>
+</div>
+<div class="p-8">
+<div class="text-[10px] font-label text-primary uppercase tracking-[0.2em] mb-2">Full-Stack Dev</div>
+<h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Engineering Dashboard</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">A high-performance data visualization platform for monitoring telemetry from embedded devices.</p>
+<a class="inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
+                            Explore Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="group relative bg-surface overflow-hidden obsidian-glow">
+<div class="aspect-[4/5] relative">
+<img alt="Amplifier Design Project" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="Interior of a high-fidelity audio amplifier showing copper heat sinks and large capacitors with dramatic cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSyF42thcEKZR6uukQH95qsVTzSWuGTLrvWQWi5zVdXsd7E_XvDUtPol5oBt9atKzWnBZkzysRff4h3MqtE5QOzkPm6LG6tPMejeUv2gOlM4cYOLp33SnUa2DhAD5w83wRULg3eX50E7ba8MYFf1Qgvd4tu-K5e1ZlbfTQ1_3-hH9GKBqizjvDE6Se2F8W0groyz0CvqyafzG8FKdnH4cGcnU4kFXH2i9bHNqVsHAiuDDmaJjhf2Ms0zKsbm-KTspOz5IkeU-IAPAj"/>
+<div class="absolute inset-0 bg-surface/40 group-hover:bg-primary/20 transition-colors"></div>
+</div>
+<div class="p-8">
+<div class="text-[10px] font-label text-primary uppercase tracking-[0.2em] mb-2">Analog Electronics</div>
+<h3 class="text-2xl font-bold mb-4 uppercase tracking-tight">Precision Amplifier</h3>
+<p class="text-on-surface-variant text-sm mb-6 leading-relaxed">Class-D audio amplifier design focusing on thermal efficiency and high signal-to-noise ratio.</p>
+<a class="inline-flex items-center gap-2 font-label text-[11px] uppercase tracking-widest text-primary hover:gap-4 transition-all" href="#">
+                            Explore Project <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Section (Vertical Timeline) -->
+<section class="py-32 bg-surface px-12 border-t border-outline-variant/10" id="experience">
+<div class="max-w-4xl mx-auto">
+<h2 class="text-5xl font-black mb-20 uppercase tracking-tighter text-center">Engineering <span class="text-primary">Journey</span></h2>
+<div class="space-y-16 relative">
+<!-- Timeline Line -->
+<div class="absolute left-0 md:left-1/2 top-0 bottom-0 w-[1px] bg-outline-variant/30 hidden md:block"></div>
+<!-- Entry 1 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-5/12 text-left md:text-right">
+<div class="font-label text-primary text-xs uppercase tracking-[0.3em] mb-2">2022 — Present</div>
+<h4 class="text-xl font-bold uppercase">Senior Systems Engineer</h4>
+<p class="text-on-surface-variant text-sm mt-2">Leading development of modular firmware for industrial automation suites.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 w-3 h-3 bg-primary -translate-x-1.5 hidden md:block group-hover:scale-150 transition-transform"></div>
+<div class="w-full md:w-5/12"></div>
+</div>
+<!-- Entry 2 -->
+<div class="relative flex flex-col md:flex-row-reverse items-center justify-between group">
+<div class="w-full md:w-5/12 text-left">
+<div class="font-label text-primary text-xs uppercase tracking-[0.3em] mb-2">2020 — 2022</div>
+<h4 class="text-xl font-bold uppercase">Embedded Developer</h4>
+<p class="text-on-surface-variant text-sm mt-2">Specialized in PCB prototyping and IoT connectivity solutions for smart-city projects.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 w-3 h-3 bg-primary -translate-x-1.5 hidden md:block group-hover:scale-150 transition-transform"></div>
+<div class="w-full md:w-5/12"></div>
+</div>
+<!-- Entry 3 -->
+<div class="relative flex flex-col md:flex-row items-center justify-between group">
+<div class="w-full md:w-5/12 text-left md:text-right">
+<div class="font-label text-primary text-xs uppercase tracking-[0.3em] mb-2">2018 — 2020</div>
+<h4 class="text-xl font-bold uppercase">Junior Electronics Engineer</h4>
+<p class="text-on-surface-variant text-sm mt-2">Designing analog signal processing circuits and testing embedded interfaces.</p>
+</div>
+<div class="absolute left-0 md:left-1/2 w-3 h-3 bg-primary -translate-x-1.5 hidden md:block group-hover:scale-150 transition-transform"></div>
+<div class="w-full md:w-5/12"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Education Section -->
+<section class="py-32 bg-surface-container-low px-12">
+<div class="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-5xl font-black mb-8 uppercase tracking-tighter leading-none">Academic <br/> <span class="text-primary-container">Foundation</span></h2>
+<p class="text-on-surface-variant max-w-md leading-relaxed">A rigorous education that bridges the gap between hardware architecture and high-level software abstraction.</p>
+</div>
+<div class="space-y-8">
+<div class="bg-surface p-8 border-l-4 border-primary">
+<h3 class="text-2xl font-bold uppercase mb-2">B.S. Electronics Engineering</h3>
+<div class="font-label text-sm text-primary mb-2 uppercase tracking-widest">Main State University • 2014 - 2018</div>
+<p class="text-on-surface-variant text-sm">Specialization in Digital Signal Processing and Embedded Microcontrollers.</p>
+</div>
+<div class="bg-surface p-8 border-l-4 border-outline-variant/30">
+<h3 class="text-2xl font-bold uppercase mb-2">Full Stack Certification</h3>
+<div class="font-label text-sm text-primary mb-2 uppercase tracking-widest">Tech Institute • 2019</div>
+<p class="text-on-surface-variant text-sm">Comprehensive training in modern web architectures and reactive UI frameworks.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 bg-surface px-12" id="contact">
+<div class="max-w-4xl mx-auto text-center">
+<h2 class="text-6xl font-black mb-8 uppercase tracking-tighter">Let's <span class="text-primary">Connect</span></h2>
+<p class="font-label text-xl text-on-surface-variant mb-16 tracking-tight">Open for collaborations and technical consultations.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<a class="flex items-center justify-center gap-4 bg-surface-container-high py-8 border border-outline-variant/10 hover:border-primary transition-all" href="mailto:laureus@example.com">
+<span class="material-symbols-outlined text-primary">mail</span>
+<span class="font-label uppercase font-bold tracking-[0.2em]">Send Email</span>
+</a>
+<a class="flex items-center justify-center gap-4 bg-surface-container-high py-8 border border-outline-variant/10 hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-primary">terminal</span>
+<span class="font-label uppercase font-bold tracking-[0.2em]">GitHub Profile</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer Shell -->
+<footer class="w-full rounded-none border-t border-neutral-800 bg-[#131313]">
+<div class="flex flex-col md:flex-row justify-between items-center px-12 py-16 w-full max-w-[1440px] mx-auto">
+<div class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-neutral-600">
+                © 2024 LAUREUS JAMES U. BONTO. ENGINEERED FOR PRECISION.
+            </div>
+<div class="flex gap-12 mt-8 md:mt-0">
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-[#40E0D0] transition-colors" href="#">GitHub</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-[#40E0D0] transition-colors" href="#">Email</a>
+<a class="font-['Space_Grotesk'] text-[10px] tracking-[0.2em] uppercase text-neutral-600 hover:text-[#40E0D0] transition-colors" href="#">LinkedIn</a>
+</div>
+</div>
+</footer>
+</body></html>
