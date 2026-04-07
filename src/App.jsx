@@ -36,7 +36,7 @@ const projects = [
     stack: ['PIC32', 'I2C', 'UART', 'C++', 'Telemetry'],
     link: '#projects',
     image:
-      "/images/cansat.png",
+      `${import.meta.env.BASE_URL}images/cansat.png`,
   },
   {
     title: 'UP CAPES Jobfair 2026 Handbook Dashboard',
@@ -48,7 +48,7 @@ const projects = [
     stack: ['React', 'Tailwind', 'Vite', 'UX Systems'],
     link: '#projects',
     image:
-      "/images/jf2026.png",
+      `${import.meta.env.BASE_URL}images/jf2026.png`,
   },
   {
     title: 'Precision Amplifier',
@@ -60,7 +60,7 @@ const projects = [
     stack: ['Analog', 'PCB', 'Simulating', 'Prototyping'],
     link: '#projects',
     image:
-      "/images/amplifer.png",
+      `${import.meta.env.BASE_URL}images/amplifier.png`,
   },
 ]
 
@@ -234,7 +234,7 @@ function App() {
                   className={`reveal overflow-hidden bg-surface text-left shadow-obsidian transition duration-500 ease-expo hover:-translate-y-1 ${index === 1 ? 'lg:translate-y-10' : ''}`}
                   data-reveal
                 >
-                  <div className="aspect-[4/5] bg-cover bg-center" style={{ backgroundImage: project.image }} aria-hidden="true" />
+                  <div className="aspect-[4/5] bg-cover bg-center" style={{ backgroundImage: `url(${project.image})` }} aria-hidden="true" />
                   <div className="p-6">
                     <p className="font-mono text-[11px] uppercase tracking-[0.28em] text-primary">{project.category}</p>
                     <h3 className="mt-3 text-2xl font-black uppercase tracking-tight">{project.title}</h3>

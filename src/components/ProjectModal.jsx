@@ -32,7 +32,7 @@ export function ProjectModal({ project, onClose }) {
         <div className="grid gap-8 p-5 sm:grid-cols-[1.1fr_0.9fr] sm:p-7">
           <div
             className="min-h-72 bg-cover bg-center"
-            style={{ backgroundImage: project.image }}
+            style={{ backgroundImage: `url(${project.image})` }}
             aria-hidden="true"
           />
           <div>
