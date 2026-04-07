@@ -16,8 +16,13 @@ export function useTypewriter(lines, speed = 26) {
       }
 
       setVisibleLines((current) => {
+        if (!lines || lineIndex >= lines.length) return current
+
         const next = [...current]
-        next[lineIndex] = lines[lineIndex].slice(0, charIndex + 1)
+        const line = lines[lineIndex] || ''
+
+        next[lineIndex] = line.slice(0, charIndex + 1)
+
         return next
       })
 
